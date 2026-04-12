@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+}
+
+/* LANDING */
+.landing {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.landing-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.start-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #22c55e;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+/* APP */
+.app {
+  max-width: 750px;
+  margin: auto;
+  padding: 20px;
+  padding-bottom: 80px;
+}
+
+/* INPUT */
+.input-card {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* COLOR */
+.color-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#colorPreview {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+/* BUTTONS */
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  background: #334155;
+  color: white;
+}
+
+#add {
+  display: block;
+  margin: 15px auto;
+  width: 60%;
+  background: #22c55e;
+}
+
+/* TOP BUTTONS */
+.top-btn {
+  position: fixed;
+  top: 10px;
+  padding: 8px 12px;
+  background: #1e293b;
+}
+
+.right {
+  right: 10px;
+}
+
+/* HEADER (STICKY) */
+.assignment-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  display: grid;
+  grid-template-columns: 40px 2fr 1.5fr 1.5fr 80px;
+  gap: 10px;
+
+  background: #0f172a;
+  padding: 10px;
+  font-weight: bold;
+  color: #94a3b8;
+  border-bottom: 1px solid #1e293b;
+  cursor: pointer;
+}
+
+/* ROW */
+.assignment-bar {
+  display: grid;
+  grid-template-columns: 40px 2fr 1.5fr 1.5fr 80px;
+  gap: 10px;
+
+  align-items: center;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+/* TEXT */
+.assignment-bar div {
+  overflow-wrap: break-word;
+}
+
+/* FOOTER */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  background: #020617;
+  color: #94a3b8;
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #1e293b;
+}
+
+/* LIGHT MODE */
+.light-mode {
+  background: #f1f5f9;
+  color: black;
+}
+
+.light-mode .input-card {
+  background: white;
+}
+
+/* ANIMATION BASE */
+.assignment-bar {
+  display: grid;
+  grid-template-columns: 40px 2fr 1.5fr 1.5fr 80px;
+  gap: 10px;
+
+  align-items: center;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* FADE IN ANIMATION */
+.fade-in {
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* DRAGGING */
+.dragging {
+  opacity: 0.5;
+  transform: scale(1.02);
+}
+
+/* OVERDUE */
+.overdue {
+  outline: 2px solid #ef4444;
+}
+
+/* TODAY */
+.today {
+  outline: 2px solid #facc15;
+}
