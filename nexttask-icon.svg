@@ -1,0 +1,13 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" rx="120" fill="#0F172A"/>
+
+  <!-- Next arrow shape -->
+  <path d="M140 170 L280 256 L140 342" stroke="#4F7CFF" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Checkmark (task complete) -->
+  <path d="M240 300 L290 350 L380 230" stroke="#22C55E" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Subtle “N” structure -->
+  <path d="M160 350 V160 L360 350 V160" stroke="#94A3B8" stroke-width="18" stroke-linecap="round" opacity="0.35"/>
+</svg>
